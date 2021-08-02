@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">移动视频</string>
+    <string name="apiUrl">http://your.service.api:20082/api</string>
+    <string name="rtmpUrl">rtmp://your.rtmp.server:1935/live</string>
+    <string name="streamUrl">http://your.rtmp.server:1985/api/v1/streams/</string>
+    <string name="login_title">移动视频终端</string>
+    <string name="register_uid">用户账号</string>
+    <string name="register_nickName">昵称</string>
+    <string name="register_pwd0">登录密码</string>
+    <string name="register_pwd1">确认密码</string>
+    <string name="register_tel">手机号码</string>
+    <string name="register_check">验证码</string>
+    <string name="login_uid">用户账号</string>
+    <string name="login_pwd">登录密码</string>
+    <string name="uid_hints">账号</string>
+    <string name="pwd_hints">密码</string>
+    <string name="btn_login">立即登录</string>
+    <string name="btn_go_register">去注册</string>
+    <string name="btn_register">立即注册</string>
+    <string name="btn_go_login">去登录</string>
+    <string name="nickName_hints">昵称</string>
+    <string name="tel_hints">手机号</string>
+    <string name="check_hints">短信验证码</string>
+    <string name="login_copyright">zys91 @Copy right 2020</string>
+    <string name="title_activity_main_app">MainApp</string>
+    <string name="title_videoList">视频广场</string>
+    <string name="title_live">视频直播</string>
+    <string name="title_account">我的账户</string>
+    <string name="live_camera">镜头</string>
+    <string name="live_camera_0">前摄</string>
+    <string name="live_camera_1">后摄</string>
+    <string name="live_orientation">方向</string>
+    <string name="live_orientation_0">横屏</string>
+    <string name="live_orientation_1">竖屏</string>
+    <string name="live_size">质量</string>
+    <string name="live_size_0">1080P</string>
+    <string name="live_size_1">720P</string>
+    <string name="live_size_2">540P</string>
+    <string name="live_kind_0">摄像直播</string>
+    <string name="live_kind_1">屏幕直播</string>
+    <string name="btn_Get_Code">获取验证码</string>
+    <string name="ScreenCaptureStatus">等待直播</string>
+    <string name="updateData">更新列表</string>
+    <string name="todo">Null</string>
+    <string name="backgroundPic">背景图</string>
+    <string name="headPic">头像</string>
+    <string name="headLine">分割线</string>
+    <string name="defaultName">无名氏</string>
+    <string name="defaultPhone">未知号码</string>
+    <string name="version">0.0.0</string>
+    <string name="notice">直播教程：\n
+        共有两种直播模式可供选择：[摄像直播] [屏幕直播] \n
+        当选中摄像直播时可选参数：[镜头] [方向] [质量] \n
+        当选中屏幕直播时可选参数：[方向] [质量]
+    </string>
+    <string name="changePwd">立即修改</string>
+    <string name="pwd_change">修改密码</string>
+    <string name="originpwd_hints">请输入原始密码</string>
+    <string name="newpwd_hints">请输入新密码</string>
+    <string name="repeatpwd_hints">请重复新密码</string>
+</resources>

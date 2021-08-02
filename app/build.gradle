@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+// 添加插件
+apply plugin: 'com.mob.sdk'
+
+// 在MobSDK的扩展中注册SMS SDK的相关信息
+MobSDK {
+    appKey "请在此次填写你所申请到的appKey"
+    appSecret "请在此次填写你所申请到的appSecret"
+    permissions {
+        exclude "android.permission.READ_CONTACTS", "android.permission.READ_PHONE_STATE"
+    }
+    SMSSDK {}
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '30.0.2'
+
+    defaultConfig {
+        applicationId "com.example.mobilevideo"
+        minSdkVersion 24
+        targetSdkVersion 29
+        versionCode 3
+        versionName "1.5.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    implementation fileTree(dir: 'src/main/libs', include: ['*.jar', '*.aar'])
+    implementation 'com.acker:simplezxing:1.5'
+    implementation 'org.jetbrains:annotations-java5:15.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.navigation:navigation-fragment:2.2.2'
+    implementation 'androidx.navigation:navigation-ui:2.2.2'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.fragment:fragment:1.3.0-alpha06'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.github.dueeeke.dkplayer:dkplayer-java:3.2.6'
+    implementation 'com.github.dueeeke.dkplayer:dkplayer-ui:3.2.6'
+    implementation 'com.github.dueeeke.dkplayer:player-ijk:3.2.6'
+    implementation 'com.github.dueeeke.dkplayer:videocache:3.2.6'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'jp.wasabeef:glide-transformations:3.0.1'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+}

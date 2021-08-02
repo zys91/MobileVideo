@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout style="@style/layoutLiveRow">
+
+            <TextView
+                style="@style/textLiveTitle"
+                android:text="@string/live_camera" />
+
+            <LinearLayout style="@style/layoutLiveRadios">
+
+                <RadioGroup
+                    android:id="@+id/rgCamera"
+                    style="@style/radiosGroupLive">
+
+                    <RadioButton
+                        style="@style/radiosBtnLive"
+                        android:tag="0"
+                        android:text="@string/live_camera_0" />
+
+                    <RadioButton
+                        style="@style/radiosBtnLive"
+                        android:tag="1"
+                        android:text="@string/live_camera_1" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/layoutLiveRow">
+
+            <TextView
+                style="@style/textLiveTitle"
+                android:text="@string/live_orientation" />
+
+            <LinearLayout style="@style/layoutLiveRadios">
+
+                <RadioGroup
+                    android:id="@+id/rgOrientation"
+                    style="@style/radiosGroupLive">
+
+                    <RadioButton
+                        style="@style/radiosBtnLive"
+                        android:tag="0"
+                        android:text="@string/live_orientation_0" />
+
+                    <RadioButton
+                        style="@style/radiosBtnLive"
+                        android:tag="1"
+                        android:text="@string/live_orientation_1" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/layoutLiveRow">
+
+            <TextView
+                style="@style/textLiveTitle"
+                android:text="@string/live_size" />
+
+            <LinearLayout style="@style/layoutLiveRadios">
+
+                <RadioGroup
+                    android:id="@+id/rgSize"
+                    style="@style/radiosGroupLive">
+
+                    <RadioButton
+                        style="@style/radiosBtnLive"
+                        android:tag="0"
+                        android:text="@string/live_size_0" />
+
+                    <RadioButton
+                        style="@style/radiosBtnLive"
+                        android:tag="1"
+                        android:text="@string/live_size_1" />
+
+                    <RadioButton
+                        style="@style/radiosBtnLive"
+                        android:tag="2"
+                        android:text="@string/live_size_2" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/layoutLiveRow"
+            android:layout_marginTop="20dp"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/btnLiveCamera"
+                style="@style/ButtonStyle"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/live_kind_0" />
+
+            <Button
+                android:id="@+id/btnLiveScreen"
+                style="@style/ButtonStyle"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="40dp"
+                android:text="@string/live_kind_1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30dp"
+                android:text="@string/notice"
+                android:textSize="16sp"
+                android:textColor="@color/colorNotice" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
