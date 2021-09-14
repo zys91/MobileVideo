@@ -3,7 +3,7 @@
 移动视频 | Android APP | RTMP直播推流 | SRS | 录屏/摄像头推流
 
 ## 应用特点及食用指北
-1. 用户注册及登录后端采用**Redis**后端实时性数据库管理，中台采用Python搭建，相关代码见[config/api.py](https://github.com/zys91/MobileVideo/blob/main/config/api.py)需自行配置相关参数；
+1. 用户注册及登录后端采用**Redis**实时性数据库管理，中台采用Python搭建，相关代码见[config/api.py](https://github.com/zys91/MobileVideo/blob/main/config/api.py)需自行配置相关参数；
 
 2. 用户注册中手机号短信验证操作采用MobSDK，需自行申请API_Key进行配置，教程详见<http://www.mob.com/wiki/detailed?wiki=SMSSDK_for_Android_kuaisujicheng>；
 
@@ -14,5 +14,7 @@
 5. 拉流播放器采用[DKVideoPlayer](https://github.com/Doikki/DKVideoPlayer)，支持列表化或者滑动播放，具体部署方案详见项目地址。
 
 ## 致谢
+
 1. [SRS](https://github.com/ossrs/srs/)
 2. [DKVideoPlayer](https://github.com/Doikki/DKVideoPlayer)
+
